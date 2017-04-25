@@ -57,7 +57,7 @@ public class ShapePanel extends JPanel
 	
 	public void painComponent(Graphics graphics)
 	{
-		this.setBackground(Color.MAGENTA());
+		this.setBackground(Color.());
 		
 		Graphics2D drawingGraphics = (Graphics2D) graphics;
 		for(Rectangle currentRectangle : rectangleList)

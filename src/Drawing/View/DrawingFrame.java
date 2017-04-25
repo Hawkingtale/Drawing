@@ -8,6 +8,7 @@ public class DrawingFrame extends JFrame
 {
 	private DrawingController baseController;
 	private DrawingPanel appPanel;
+	private ShapePanel appPanel;
 	
 	public DrawingFrame(DrawingController baseController)
 	{
@@ -18,6 +19,11 @@ public class DrawingFrame extends JFrame
 	
 	private void setupFrame()
 	{
-		
+		this.setContentPane(DrawingPanel);
+		this.setSize(new Dimension(600,600));
+		this.setTitle("HI");
+		this.setLocationRelativeTo(null);
+		this.setVisible(true);
 	}
+	
 }
