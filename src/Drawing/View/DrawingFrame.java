@@ -7,14 +7,13 @@ import java.awt.Dimension;
 public class DrawingFrame extends JFrame
 {
 	private DrawingController baseController;
-	private DrawingPanel appPanel;
-	private ShapePanel appPanel;
+	private DrawingPanel DrawingPanel;
 	
 	public DrawingFrame(DrawingController baseController)
 	{
 		super();
 		this.baseController = baseController;
-		this.appPanel = new DrawingPanel(baseController);
+		this.DrawingPanel = new DrawingPanel(baseController);
 	}
 	
 	private void setupFrame()

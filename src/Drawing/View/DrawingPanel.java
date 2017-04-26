@@ -2,6 +2,7 @@ package Drawing.View;
 
 import Drawing.Controller.DrawingController;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,19 +19,15 @@ public class DrawingPanel extends JPanel
 		super();
 		this.BaseController = baseController;
 		
-		shapePanel = new ShapePanel(baseController);
-		this.baseLayout = new springLayout;
+		this.shapePanel = new ShapePanel(baseController);
+		this.baseLayout = new SpringLayout();
 		
 		
 		setupPanel();
 		setupLayout();
 		setupListeners();
 	}
-	
-	public ShapePanel(DrawingController baseController)
-	{
-		
-	}
+
 	
 	
 	private void setupPanel()
@@ -43,12 +40,12 @@ public class DrawingPanel extends JPanel
 		this.add(shapePanel);
 	}
 	
-	private void setupLayout();
+	private void setupLayout()
 	{
 		
 	}
 	
-	private void setupListeners();
+	private void setupListeners()
 	{
 		rectangleButton.addActionListener(new ActionListener()
 			{
@@ -56,6 +53,6 @@ public class DrawingPanel extends JPanel
 				{
 					shapePanel.addRectangles();
 				}
-			})
+			});
 	}
 }
