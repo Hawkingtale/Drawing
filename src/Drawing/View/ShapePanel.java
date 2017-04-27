@@ -152,7 +152,7 @@ public class ShapePanel extends JPanel
 		this.setBackground(getRandomColor());
 		this.repaint();
 	}
-	public void painComponent(Graphics graphics)
+	public void paintComponent(Graphics graphics)
 	{
 		Graphics2D drawingGraphics = (Graphics2D) graphics;
 		
