@@ -140,7 +140,10 @@ public class ShapePanel extends JPanel
 				xVertices[vertex] = xCorner;
 				yVertices[vertex] = yCorner;
 			}
+			Polygon current = new Polygon(xVertices, yVertices, vertexCount);
+			polygonList.add(current);
 		}
+		this.repaint();
 	}
 	
 	public void reset()

@@ -1,15 +1,15 @@
 package Drawing.Controller;
 
 
-import Drawing.View.DrawingPanel;
+import Drawing.View.*;
 public class DrawingController
 {
 
-	DrawingPanel drawingPanel;
+	DrawingFrame drawingFrame;
 	
 	public DrawingController()
 	{
-		this.drawingPanel = new DrawingPanel(this);
+		this.drawingFrame = new DrawingFrame(this);
 	}
 	
 	public void start()
